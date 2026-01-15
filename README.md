@@ -17,7 +17,7 @@ BaekjoonHub로 자동 업로드되는 PS(Problem Solving) 풀이 아카이브입
 ### Compile
 
 ```bash
-g++ -std=c++17 -O2 -Wall -Wextra -pedantic -o 0x01/example 0x01/example.cpp
+g++-15 -o 0x01/example 0x01/example.cpp
 ```
 
 ### Run

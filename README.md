@@ -14,19 +14,19 @@ BaekjoonHub로 자동 업로드되는 PS(Problem Solving) 풀이 아카이브입
 
 ## Build & Run (C++)
 
-### Compile (recommended)
-실행 파일은 `bin/`에 생성하는 것을 권장합니다. (`bin/`은 gitignore 처리됨)
+### Compile
 
 ```bash
-mkdir -p bin
-g++ -std=c++17 -O2 -Wall -Wextra -pedantic -o bin/app path/to/file.cpp
+g++ -std=c++17 -O2 -Wall -Wextra -pedantic -o 0x01/example 0x01/example.cpp
 ```
 
 ### Run
 
 ```bash
-g++-15 -std=c++17 -O2 -Wall -Wextra -pedantic -o bin/app path/to/file.cpp
+./0x01/example
 ```
+
+> 실행파일은 `.gitignore`에서 자동 제외됩니다.
 
 ---
 
@@ -38,8 +38,9 @@ g++-15 -std=c++17 -O2 -Wall -Wextra -pedantic -o bin/app path/to/file.cpp
 ---
 
 ## Commit Message Convention (optional)
-•	solve(boj): {id} ... [0x??|2026|C++]
-•	review(boj): {id} ... [0x??|2026]
+
+-	`solve(boj): {id} ... [0x??|2026|C++]`
+-	`review(boj): {id} ... [0x??|2026]`
 
 ```bash
 review(boj): 2178 재풀이 - BFS 템플릿 적용 [0x09|2026]

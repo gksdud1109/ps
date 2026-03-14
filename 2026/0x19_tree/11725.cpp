@@ -2,7 +2,7 @@
 using namespace std;
 
 int n;
-vector<int>adj[100001];
+vector<int> adj[100001];
 int p[100001];
 
 void dfs(int cur){
@@ -10,6 +10,20 @@ void dfs(int cur){
     if(p[cur] == nxt) continue;
     p[nxt] = cur;
     dfs(nxt);
+  }
+}
+
+void bfs(int st){
+  queue<int> Q;
+  Q.push(st);
+  p[0] = st;
+  while(!Q.empty()){
+    int cur = Q.front(); Q.pop();
+    for(int nxt : adj[cur]){
+      if(p[cur] == nxt) continue;
+      Q.push(nxt);
+      p[nxt] = cur;
+    }
   }
 }
 

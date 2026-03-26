@@ -13,7 +13,7 @@ int bfs(){
   for(int i=0; i<N; i++)
     for(int j=0; j<M; j++)
       dist[i][j][0] = dist[i][j][1] = -1;
-  dist[0][0][1] = dist[0][0][1] = 1;
+  dist[0][0][0] = dist[0][0][1] = 1;
   queue<tuple<int,int,int>> Q;
   Q.push({0,0,0});
   while(!Q.empty()){

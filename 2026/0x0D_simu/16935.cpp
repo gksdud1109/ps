@@ -79,7 +79,7 @@ int main(){
   cin >> N >> M >> R;
   arr.assign(N, vector<int>(M));
   for (int i = 0; i < N; i++) {
-    for (int j = 0; j < N; j++) {
+    for (int j = 0; j < M; j++) {
       cin >> arr[i][j];
     }
   }

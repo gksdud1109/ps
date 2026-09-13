@@ -30,7 +30,7 @@ code /Users/hanyoung-jeong/Desktop/algorithm/barkingdog
 ### Compile
 
 ```bash
-/opt/homebrew/bin/g++-16 -std=c++17 -Wall -Wextra -g \
+/opt/homebrew/bin/g++-16 -std=c++17 -Wall -Wextra \
   2026_09/combination.cpp -o 2026_09/combination
 ```
 

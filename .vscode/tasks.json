@@ -4,14 +4,11 @@
     {
       "type": "process",
       "label": "C++: 활성 파일 빌드 (GCC 16)",
-      "command": "/opt/homebrew/bin/g++-16",
+      "command": "g++-16",
       "args": [
-        "-std=c++17",
-        "-Wall",
-        "-Wextra",
-        "${file}",
         "-o",
-        "${fileDirname}/${fileBasenameNoExtension}"
+        "${fileDirname}/${fileBasenameNoExtension}",
+        "${file}"
       ],
       "options": {
         "cwd": "${fileDirname}"
@@ -32,7 +29,7 @@
         "kind": "build",
         "isDefault": true
       },
-      "detail": "활성 C++ 파일을 Homebrew GCC 16으로 빌드합니다."
+      "detail": "g++-16 -o <실행파일> <소스파일> 형태로 빌드합니다."
     },
     {
       "type": "process",

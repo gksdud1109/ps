@@ -8,7 +8,7 @@ BaekjoonHub로 자동 업로드되는 PS(Problem Solving) 풀이 아카이브입
 ## Directory Structure
 
 - `2025/0x??/` : 2025년에 풀이/아카이빙한 문제
-- `2026/0x??/` : 2026년 학습 및 신규 풀이
+- `2026_H2/` : 2026년 하반기 학습 및 신규 풀이
 
 ---
 
@@ -17,7 +17,7 @@ BaekjoonHub로 자동 업로드되는 PS(Problem Solving) 풀이 아카이브입
 ### Prerequisites
 
 - macOS Apple Silicon
-- Homebrew GCC 16: `/opt/homebrew/bin/g++-16`
+- Homebrew GCC 16: `g++-16`
 - Antigravity IDE: `clangd` extension (현재 설치됨)
 - VS Code를 쓸 때: `ms-vscode.cpptools` extension
 
@@ -30,14 +30,13 @@ code /Users/hanyoung-jeong/Desktop/algorithm/barkingdog
 ### Compile
 
 ```bash
-/opt/homebrew/bin/g++-16 -std=c++17 -Wall -Wextra \
-  2026_09/combination.cpp -o 2026_09/combination
+g++-16 -o 2026_H2/combination 2026_H2/combination.cpp
 ```
 
 ### Run
 
 ```bash
-./2026_09/combination
+./2026_H2/combination
 ```
 
 > 실행파일은 `.gitignore`에서 자동 제외됩니다.

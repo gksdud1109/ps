@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int n = 5, k = 3, a[5] = {1, 2, 3, 4, 5};
+int n = 5, a[5] = {1, 2, 3, 4, 5};
+size_t k = 3;
 
 void print(vector<int> b) {
   for (int i : b)

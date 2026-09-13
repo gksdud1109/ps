@@ -27,4 +27,5 @@ a.out
 !*.h
 !*.hpp
 !*.md
+!compile_flags.txt
 !.gitignore

@@ -129,5 +129,16 @@
     "variant": "cpp",
     "memory": "cpp",
     "algorithm": "cpp"
-  }
+  },
+  "[cpp]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "editor.formatOnPaste": false
+  },
+  "[c]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "editor.formatOnPaste": false
+  },
+  "C_Cpp.formatting": "disabled"
 }

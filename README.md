@@ -57,6 +57,24 @@ GCC 16의 표준 라이브러리 경로를 알려 주므로 `#include <bits/stdc
 
 ---
 
+## Build & Run (Java)
+
+Java 11 이상이 필요합니다. 현재 터미널의 Java는 17입니다.
+저장소 루트에서 다음 한 줄로 컴파일과 실행을 함께 합니다.
+
+```bash
+java 2026_H2/w1/1-c.java
+```
+
+- 파일명은 `1-c.java`처럼 유지하고, 파일 내부는 `class Main`과
+  `public static void main(String[] args)`로 작성합니다.
+- 소스 파일 실행 모드는 메모리에서 컴파일하므로 `.class` 파일을 남기지 않습니다.
+- IDE: Java 파일을 저장한 뒤 `Tasks: Run Task` → `Java: 활성 파일 실행`.
+- Code Runner가 설치되어 있다면 `Run Code`로도 같은 방식으로 실행합니다.
+- `⌘⇧B`는 기존 C++ 빌드 작업입니다. Java는 위 실행 작업을 선택합니다.
+
+---
+
 ## Workflow (recommended)
 1. 문제 풀이 후 제출
 2. BaekjoonHub가 자동 커밋/푸시

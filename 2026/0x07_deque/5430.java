@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Main{
+class Main{
   public static void main(String[] args) throws IOException{
 
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -18,7 +18,7 @@ public class Main{
 
       arrayStr = arrayStr.substring(1, arrayStr.length() - 1);
 
-      int (n > 0){
+      if (n > 0){
         String[] nums = arrayStr.split(",");
         for(String num : nums){
           deque.add(Integer.parseInt(num));

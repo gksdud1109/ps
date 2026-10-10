@@ -14,7 +14,7 @@ class Node implements Comparable<Node>{
   }
 }
 
-public class Main {
+class Main {
   public static void main(String[] args) {
     ArrayList<Node> list = new ArrayList<>();
     list.add(new Node(1,2,10));

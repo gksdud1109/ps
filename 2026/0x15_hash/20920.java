@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main{
+class Main{
   public static void main(String[] args) throws IOException{
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     StringTokenizer st = new StringTokenizer(br.readLine());
@@ -9,7 +9,7 @@ public class Main{
     int n = Integer.parseInt(st.nextToken());
     int m = Integer.parseInt(st.nextToken());
 
-    Map<String, Integer> wordCound = new HashMap<>();
+    Map<String, Integer> wordCount = new HashMap<>();
 
     for(int i=0; i<n; i++){
       String word = br.readLine();

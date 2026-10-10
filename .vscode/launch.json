@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "barkingdog_68ee939b"
+    },
+    {
       "name": "C++: 활성 파일 디버그 (GCC 16 + LLDB)",
       "type": "cppdbg",
       "request": "launch",

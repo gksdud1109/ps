@@ -5,7 +5,7 @@ class Point{
   Point(int x, int y) {this.x=x; this.y=y;}
 }
 
-public class Main{
+class Main{
   static int[] dx = {-1, 1, 0, 0};
   static int[] dy = {0, 0, 1, -1};
 
@@ -19,8 +19,8 @@ public class Main{
     while(!q.isEmpty()){
       Point cur = q.poll();
       for(int dir = 0; dir <4; dir++){
-        int nx = cur.x + dx[i];
-        int ny = cur.y + dy[i];
+        int nx = cur.x + dx[dir];
+        int ny = cur.y + dy[dir];
 
         if(nx < 0 || nx >= 100 || ny < 0 || ny >= 100) continue;
         if(vis[nx][ny]) continue;

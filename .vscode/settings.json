@@ -140,5 +140,7 @@
     "editor.formatOnType": false,
     "editor.formatOnPaste": false
   },
-  "C_Cpp.formatting": "disabled"
+  "C_Cpp.formatting": "disabled",
+  "java.project.sourcePaths": [],
+  "java.errors.incompleteClasspath.severity": "ignore"
 }

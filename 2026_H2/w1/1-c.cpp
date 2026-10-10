@@ -1,36 +1,19 @@
 #include <bits/stdc++.h>
-using namespace std;
-
+using namespace std;   
+int A, B, C, a, b, cnt[104], ret;
 int main(){
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-
-    int a, b, c;
-    cin >> a >> b >> c;
-
-    int t[101];
-
-    for(int i=0; i<3; i++){
-        int inTime, outTime;
-        cin >> inTime >> outTime;
-
-        for(int j=inTime; j<=outTime; j++){
-            t[j]++;
+    cin >> A >> B >> C; 
+    for(int i = 0; i < 3; i++){
+        cin >> a >> b; 
+        for(int j = a; j < b; j++)cnt[j]++;
+    }
+    for(int j = 1; j < 100; j++){
+        if(cnt[j]){
+            if(cnt[j] == 1) ret += A;
+            else if(cnt[j] == 2)ret += B * 2;
+            else if(cnt[j] == 3)ret += C * 3;
         }
     }
-
-    int fee = 0;
-
-    for(int k=0; k<101; k++){
-        int cur = t[k];
-        if(cur == 1) fee += a;
-        else if(cur == 2) fee += b;
-        else if(cur == 3) fee += c;
-
-    }
-    
-    cout << fee << '\n';
-
+    cout << ret << "\n"; 
     return 0;
-
 }

@@ -15,7 +15,6 @@ Thumbs.db
 *.dll
 *.exe
 *.out
-a.out
 
 # Ignore extensionless executables (compiled from .cpp)
 # Whitelist approach: ignore all, then allow specific extensions

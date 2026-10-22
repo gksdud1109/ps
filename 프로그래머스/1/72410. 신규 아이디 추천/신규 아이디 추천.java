@@ -2,34 +2,45 @@ import java.util.*;
 
 class Solution {
     public String solution(String new_id) {
-        // 1
-        new_id = new_id.toLowerCase();
+        String id = new_id.toLowerCase(Locale.ROOT);
         
-        // 2
-        new_id = new_id.replaceAll("[^a-z0-9-_.]", "");
+        StringBuilder sb = new StringBuilder();
         
-        // 3
-        new_id = new_id.replaceAll("[.]{2,}", ".");
-        
+        for(char c : id.toCharArray()){
+            boolean valid = (c>='a' && c <='z')
+                || (c>='0' && c <= '9')
+                || c == '-' || c == '_' || c == '.';
+            
+            if(!valid) continue;
+            if(c == '.' && sb.length() > 0
+              && sb.charAt(sb.length()-1) == '.') continue;
+            
+            sb.append(c);
+        }
         // 4
-        new_id = new_id.replaceAll("^[.]|[.]$", "");
+        if(sb.length() > 0 && sb.charAt(0) == '.') 
+            sb.deleteCharAt(0);
+        
+        if(sb.length() > 0 && sb.charAt(sb.length()-1) == '.') 
+            sb.deleteCharAt(sb.length()-1);
         
         // 5
-        if(new_id.isEmpty()){
-            new_id = "a";
+        if(sb.length() == 0){
+            sb.append('a');
         }
         
         // 6
-        if(new_id.length() >= 16){
-            new_id = new_id.substring(0, 15);
-            new_id = new_id.replaceAll("[.]$", "");
+        if(sb.length() > 15){
+            sb.setLength(15);
         }
+        if(sb.charAt(sb.length() -1)== '.')
+            sb.deleteCharAt(sb.length()-1);
         
         // 7
-        while(new_id.length() < 3){
-            new_id += new_id.charAt(new_id.length()-1);
+        while(sb.length() < 3){
+            sb.append(sb.charAt(sb.length()-1));
         }
         
-        return new_id;
+        return sb.toString();
     }
 }
